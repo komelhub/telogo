@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Membuat Web Itu Mudah!</title>
+  <link rel="stylesheet" href="theme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+
+html, body {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #222;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  margin-left: 24px;
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #5B20C7;
+}
+
+.button {
+  background-color: #5B20C7;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin-left: 24px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.teks {
+  max-width: 500px;
+  position: relative;
+}
+
+.teks h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0 0 20px;
+  color: #111;
+}
+
+.kontol {
+  color: #5B20C7;
+}
+
+.teks p {
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+button {
+  background-color: #5B20C7;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #471b9e;
+}
+
+.gambar {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pattern {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.img {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  height: auto;
+}
+
+.pattern-mburi {
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  width: 55%;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.teks h1,
+.teks p,
+.teks button {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .teks {
+    max-width: 100%;
+  }
+
+  .teks h1 {
+    font-size: 2rem;
+  }
+
+  .teks p {
+    font-size: 15px;
+  }
+
+  .gambar {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .gambar {
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .teks h1 {
+    font-size: 2.5rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-flex">
+      <div>
+        <img src="logo-icon-normal.svg" alt="Logo">
+      </div>
+      <nav class="navigation">
+        <a href="#">Beranda</a>
+        <a href="#">Persiapan</a>
+        <a href="#">Kurikulum</a>
+        <a href="#" class="button">Mulai</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="teks">
+      <img src="img-pattern.svg" alt="pattern" class="pattern-mburi">
+      <h1>NGGAWE WEB <br><span class="kontol">KUWI NAYOH!!</span></h1>
+      <p>
+        Membuat web itu tidak sesulit yang dibayangkan. Indonesia, Amerika, Eropa —
+        di manapun teknik dan alat membuat web itu sama. Dan itu modal besar dan alasan utama
+        bahwa setiap orang bisa membuat web dengan kualitas dunia.
+      </p>
+      <button>Mulai Sinau</button>
+    </div>
+
+    <div class="gambar">
+      <img src="img-pattern2.svg" alt="pattern" class="pattern">
+      <img src="img-hero.png" alt="hero" class="img">
+    </div>
+  </section>
+
+</body>
+
+</html>
